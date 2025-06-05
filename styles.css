@@ -1,0 +1,230 @@
+/* 1. Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+/* 2. Typography */
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2A9D8F; /* Teal accent */
+}
+h1 {
+  font-size: 2.5rem; /* 40px */
+  margin-bottom: 0.5rem;
+}
+h2 {
+  font-size: 2rem; /* 32px */
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.5rem; /* 24px */
+  margin-bottom: 0.75rem;
+}
+p, li {
+  font-size: 1rem; /* 16px */
+  margin-bottom: 0.75rem;
+}
+a {
+  color: #4A6FA5; /* Slate-blue accent */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 3. Container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* 4. Header & Navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E0E0E0;
+  z-index: 1000;
+}
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.logo a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  color: #333333;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.main-nav a {
+  font-size: 0.9rem; /* 14px */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.main-nav a:hover {
+  color: #2A9D8F;
+}
+
+/* 5. Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #FAFAFA;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-text {
+  max-width: 500px;
+}
+.tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem; /* 20px */
+  margin-bottom: 0.5rem;
+  color: #4A6FA5;
+}
+.subheading {
+  font-size: 1rem;
+  color: #555555;
+}
+.hero-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #E0E0E0;
+}
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image {
+    margin-top: 2rem;
+  }
+}
+
+/* 6. Sections */
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+section h2 {
+  border-bottom: 2px solid #E0E0E0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* About */
+.about-section ul {
+  list-style: disc inside;
+  margin-top: 1rem;
+}
+
+/* Experience */
+.experience-section .job {
+  margin-bottom: 3rem;
+}
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+.job-header h3 {
+  font-size: 1.25rem;
+}
+.duration {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.9rem;
+  color: #777777;
+}
+.job-location {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.experience-section ul {
+  list-style: disc inside;
+}
+
+/* Research & Projects */
+.projects-section .project {
+  margin-bottom: 3rem;
+}
+.role {
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777777;
+  margin-bottom: 0.5rem;
+}
+
+/* Skills */
+.skills-section .columns {
+  display: flex;
+  gap: 3rem;
+}
+.skills-section ul {
+  list-style: none;
+}
+.skills-section ul li::before {
+  content: "•";
+  color: #2A9D8F;
+  display: inline-block;
+  width: 1rem;
+}
+@media (max-width: 768px) {
+  .skills-section .columns {
+    flex-direction: column;
+  }
+}
+
+/* Contact */
+.contact-section ul.contact-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+.contact-list li {
+  margin-bottom: 0.75rem;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid #E0E0E0;
+  background-color: #FFFFFF;
+}
+.site-footer p {
+  font-size: 0.9rem;
+  color: #777777;
+}
